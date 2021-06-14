@@ -1,0 +1,26 @@
+.TimeSettings {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    padding: 2rem;
+    text-align: center;
+}
+
+.TextField {
+    width: 100%;
+}
+
+:global(.MuiFormLabel-root) {
+    color: #fff !important;
+}
+
+:global(.MuiFilledInput-underline:before) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+:global(.MuiFilledInput-colorSecondary.MuiFilledInput-underline:after) {
+    border-bottom-color: #8EBCD6 !important;
+}
+
+:global(.MuiFormLabel-colorSecondary.Mui-focused) {
+    color: #8EBCD6 !important;
+}

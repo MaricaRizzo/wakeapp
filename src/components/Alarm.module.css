@@ -1,0 +1,113 @@
+/*Alarm card container*/
+
+:global(.active) {
+    background-color: white;
+    margin: auto;
+    width: 251px;
+    height: 101px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding:10px 15px 0 35px;
+    margin: 1rem 0;
+    transition: 0.5s ease;
+}
+
+:global(.inactive) {
+    background-color: #c1c1c1;
+    margin: auto;
+    width: 251px;
+    height: 101px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding:10px 15px 0 35px;
+    margin: 1rem 0;
+    transition: 0.5s ease;
+}
+
+
+
+/*Time + toggle container*/
+
+.firstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.alarmTime {
+    margin: 0;
+    color: var(--navbar-color);
+}
+
+
+
+/*Toggle code*/
+
+.switchOnOff {
+    position: relative;
+    display: inline-block;
+    width: 82px;
+    height: 27px;
+}
+
+.switchOnOff input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.sliderOnOff {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--backgorund-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.sliderOnOff:before {
+    position: absolute;
+    content: "On";
+    height: 27px;
+    width: 44.73px;
+    background-color: #55C74B;
+    color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 19.5px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input:checked + .sliderOnOff:before {
+    content:'Off';
+    background-color: #C74B4B;
+    -webkit-transform: translateX(37.4px);
+    -ms-transform: translateX(37.4px);
+    transform: translateX(37.4px);
+}
+
+
+
+
+/*Wake up for line*/
+
+.alarmFor {
+    margin: 0;
+    color: var(--backgorund-color)
+}

@@ -1,0 +1,37 @@
+.AlarmSettings {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    padding: 2rem;
+    text-align: center;
+}
+
+.ButtonGroup {
+    width: 100%;
+}
+
+.ButtonGroup :global(button) {
+    width: 100%;
+    color: #fff;
+    border: none !important;
+    padding: 0;
+    text-transform: capitalize;
+    padding: 2rem 0 1rem 0;
+}
+
+.ButtonGroup :global(button span) {
+    justify-content: space-between !important;
+}
+
+.ButtonGroup :global(button span h3) {
+    margin: 0;
+}
+
+.Logo {
+    max-width: 250px;
+    cursor: pointer;
+}
+
+.Submit {
+    background-color: #2b2b2b !important;
+    margin: 1.5rem 0 !important;
+}

@@ -1,0 +1,16 @@
+.PickDay {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    padding: 2rem;
+    text-align: center;
+    overflow: auto;
+}
+
+.PickDay :global(button) {
+    width: 100%;
+    color: #fff;
+    border: none !important;
+    padding: 0;
+    text-transform: capitalize;
+    padding: 0.6rem 0;
+}
